@@ -1,4 +1,4 @@
-package Waterflames.websend;
+package waterflames.websend;
 
 import com.Ostermiller.util.Base64;
 import java.io.*;

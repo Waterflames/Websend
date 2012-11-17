@@ -1,4 +1,4 @@
-package Waterflames.websend;
+package waterflames.websend;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -8,8 +8,6 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.PluginLogger;
-import org.bukkit.plugin.PluginLoggerListener;
 
 public class PluginOutputManager
 {
@@ -37,21 +35,21 @@ public class PluginOutputManager
 
 	public static void registerLoggerListener()
 	{
-		try
-		{
-			PluginLogger.registerGlobalListener(new PluginLoggerListener()
-			{
-				@Override
-				public void onLogged(Plugin plugin, LogRecord lr)
-				{
-					PluginOutputManager.handleLogRecord(plugin, lr);
-				}
-			});
-		}
-		catch (Exception ex)
-		{
+//		try
+//		{
+//			PluginLogger.registerGlobalListener(new PluginLoggerListener()
+//			{
+//				@Override
+//				public void onLogged(Plugin plugin, LogRecord lr)
+//				{
+//					PluginOutputManager.handleLogRecord(plugin, lr);
+//				}
+//			});
+//		}
+//		catch (Exception ex)
+//		{
 			Main.getMainLogger().log(Level.INFO, "Default craftbukkit detected, plugin output capturing will not work.");
-		}
+//		}
 	}
 
 	// unused useful functions

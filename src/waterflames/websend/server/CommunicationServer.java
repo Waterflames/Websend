@@ -5,11 +5,8 @@
  * Password
  */
 
-package Waterflames.websend.server;
+package waterflames.websend.server;
 
-import Waterflames.websend.Main;
-import Waterflames.websend.PacketHandler;
-import Waterflames.websend.TrustedHosts;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -17,6 +14,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
 import java.util.logging.Level;
+
+import waterflames.websend.Main;
+import waterflames.websend.PacketHandler;
+import waterflames.websend.TrustedHosts;
 
 public class CommunicationServer extends Thread
 {
