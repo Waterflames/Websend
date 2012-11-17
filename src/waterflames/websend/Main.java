@@ -1,7 +1,5 @@
-package Waterflames.websend;
+package waterflames.websend;
 
-import Waterflames.websend.script.ScriptManager;
-import Waterflames.websend.server.CommunicationServer;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,6 +13,9 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.command.RemoteConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import waterflames.websend.script.ScriptManager;
+import waterflames.websend.server.CommunicationServer;
 
 public class Main extends JavaPlugin
 {

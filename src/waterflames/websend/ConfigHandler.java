@@ -1,4 +1,4 @@
-package Waterflames.websend;
+package waterflames.websend;
 
 import java.io.*;
 import java.security.MessageDigest;
@@ -151,7 +151,8 @@ public class ConfigHandler
 			{
 				String value = line.replaceFirst("SALT=", "");
 				settings.setSalt(value);
-			}if (line.startsWith("HASH_ALGORITHM=")){
+			}
+			else if (line.startsWith("HASH_ALGORITHM=")){
                                 String value = line.replaceFirst("HASH_ALGORITHM=", "");
                                 try
                                 {
